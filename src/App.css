@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+* {
+    font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+    margin-left: 30px;
+    font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Paid {
+    background-color: rgba(50, 205, 50, 0.182);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Unpaid {
+    background-color: rgba(205, 50, 50, 0.182);
 }
 
-.App-link {
-  color: #61dafb;
+.invoicesList {
+    margin: auto;
+    padding: 0%;
+    height: 50rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-table {
+    max-width: 40rem;
+    min-height: 28rem;
+    box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.44);
+    left: 30%;
+    top: 3rem;
+    position: relative;
+}
+
+.table-body {
+    background-color: rgba(0, 0, 0, 0.194);
+    position: relative;
+    padding: 30px;
+}
+
+.invoice-table {
+    /* border: 1px solid black; */
+    width: 40rem;
+}
+
+td {
+    font-weight: 100;
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+th {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+tr {
+    position: relative;
+}
+
+tr:hover {
+    background-color: rgb(174, 174, 174);
 }
